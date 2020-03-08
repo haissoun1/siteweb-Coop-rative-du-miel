@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand%27');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: url(../mariaa/background.jpg) no-repeat;
+    margin-top: -65px;
+    padding-bottom: 20px;
+}
+
+/* --------------------------------------------Nav */
+nav {
+
+    text-align: right;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    line-height: 70px;
+    padding: 5px 5px;
+    border-radius: 30px;
+}
+
+.menu a:hover {
+    background-color: #FFCE0D;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+
+}
+
+#toggle {
+    display: none;
+}
+
+.nav img {
+    width: 80px;
+    height: 80px;
+}
+
+.listofproducts img {
+    height: 100px;
+    margin-top: 35px;
+}
+
+.logo {
+    height: 80px;
+    margin-top: -1px;
+}
+
+.menu a.active {
+    background: #FFCE0D;
+}
+
+.menu a:hover {
+    background-color: #FFCE0D;
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .Header {
+        height: 10vh;
+        background-size: contain;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        color: black;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: #FFCE0D
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid gray;
+        margin: 0;
+    }
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+}
+
+
+/* ----------------------------------------------------footer--------------------------------------------------------- */
+
+.footer_container{
+    padding: 10px 30px;
+    margin: auto;
+    background-color: #FFCE0D;
+}
+.row{
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-between;
+	
+}
+.footer_menu p {
+    max-width: 200px;
+}
+.footer_menu{
+    padding-top: 50px;
+}
+.media{
+    padding-top: 10px;
+}
+.media ul {
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+/* ------------------------------------------------body---------------------------------------------------------- */
+h1 {
+    background-color: #F89B31;
+    padding: 10px;
+    width: 210px;
+    text-align: center;
+    margin: 70px auto;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium';
+    position: relative;
+    top: 30px;
+    animation: swing 2s;
+}
+
+
+
+@-webkit-keyframes swing {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.product1,
+.product2,
+.product3,
+.product4,
+.product5,
+.product6 {
+    background-color: white;
+    width: 210px;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px grey;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.button p {
+    font-size: 10px;
+    font-family: cursive;
+    margin: 9px 5px;
+    padding-bottom: 12px;
+}
+
+span {
+    background-color: #F89B31;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.button p {
+    background-color: #F89B31;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bolder;
+    width: 200px;
+    text-align: center;
+    margin: 35px auto;
+    border: 1px solid #707070;
+    transition-duration: 1s;
+    transform: scale(1);
+}
+
+.button p:hover {
+    transform: scale(1.15);
+}
+
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.description {
+    width: 20%;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    .one,
+    .two,
+    .three {
+        display: flex;
+    }
+
+    .product1,
+    .product2,
+    .product3,
+    .product4,
+    .product5,
+    .product6 {
+        margin: 20px;
+        width: 37%;
+        height: 350px;
+    }
+
+    .one,
+    .two,
+    .three {
+        justify-content: center;
+    }
+
+    .listofproducts p {
+        font-size: 20px;
+    }
+
+    h1 {
+        width: 383px;
+    }
+
+}
+
+/* @media only screen and (min-width: 900px) {
+
+    .product1,
+    .product2,
+    .product3,
+    .product4,
+    .product5,
+    .product6 {
+        margin: 20px;
+        width: 37%;
+        height: 400px;
+    } */
+
+/* -----------------------------------------------footer----------------------------------------------------- */
+
+/* @media only screen and (min-width:900px) {
+        .footer {
+            font-size: .6em;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+
+    }
+
+    @media only screen and (max-width:590px) {
+        .footer {
+            display: block;
+        }
+
+
+    } */
+
+
+
+.contacts ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: #F8D64E;
+    margin-right: 40px;
+
+}
+
+.contacts ul li i {
+    margin-right: 10px;
+    color: #F8D64E;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 990px) {
+
+    .contacts ul {
+        flex-direction: column;
+
+    }
+
+    .contacts ul li {
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .footer_container {
+       text-align: center;   
+    }
+    .footer_menu p {
+        max-width: none;   
+    }
+    .row  {
+        display: block;
+        justify-content: space-between;
+    }
+    
+    .media ul {
+          display: flex; 
+           }
+
+    .footer_menu ul{
+        list-style-type: none;
+        text-align: center;
+
+    }
+    .footer_menu{
+        padding-top: 0;
+    }
+}

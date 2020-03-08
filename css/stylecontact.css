@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ----------------------------------------------------header--------------------------------------------------------- */
+#logo img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    background: url(../contact_page/back.jpg);
+    background-size: 100%;
+    padding-bottom: 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid grey; */
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#contact {
+    margin: 0 30px;
+}
+.contnt {
+    display: flex;
+}
+
+#maps {
+    margin: 10vh;
+    width: 500vh;
+    height: 55vh;
+    border: 1px solid rgba(37, 37, 37, 0.404);
+    border-radius: 5px;
+}
+
+#maps iframe {
+    width: 100%;
+    height: 100%;
+    border: 10px;
+}
+
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    line-height: 70px;
+    padding: 5px 5px;
+    border-radius: 30px;
+}
+
+.menu a.active {
+    background: #FFCE0D;
+}
+
+.menu a:hover {
+    background-color: #FFCE0D;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+/* ----------------------------------------------------container--------------------------------------------------------- */
+
+.container {
+    width: 100%;
+    padding: 0 0px;
+}
+
+.container p {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.contact-fome {
+    margin: 0;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-class {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-class {
+    width: 30%;
+}
+
+.msg {
+    width: 44%;
+    padding-right: 4%;
+}
+
+.input-class .input,
+.msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border: 1px solid rgba(37, 37, 37, 0.404);
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    width: 96%;
+}
+
+
+.msg textarea {
+    height: 180px;
+}
+
+::-webkit-input-placeholder {
+    color: #FFCE0D;
+}
+
+::-moz-input-placeholder {
+    color: #FFCE0D;
+}
+
+
+.btn {
+    background: #888888;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    box-shadow: 3px 3px 3px #888888;
+}
+
+
+button:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* ----------------------------------------------------footer--------------------------------------------------------- */
+
+.footer_container{
+    padding: 10px 30px;
+    margin: auto;
+    background-color: #FFCE0D;
+}
+.row{
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-between;
+	
+}
+.footer_menu p {
+    max-width: 200px;
+}
+.media{
+    padding-top: 10px;
+}
+.media ul {
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+.footer_menu{
+    padding-top: 50px;
+}
+
+/* ----------------------------------------------------Responsive--------------------------------------------------------- */
+
+
+@media only screen and (max-width: 900px) {
+    .nav {
+        background-size: 100%;
+        padding-bottom: 30vh;
+        background-repeat: no-repeat;
+    }
+   
+}
+
+@media only screen and (max-width: 735px) {
+    .nav {
+        background-size: 100%;
+        padding-bottom: 40vh;
+        background-repeat: no-repeat;
+    }
+
+    .row ,.contnt {
+        display: block;
+    }
+
+    .contact-fome {
+        flex-direction: column;
+    }
+
+    .input-class,
+    .msg {
+        width: 80%;
+        margin: auto;
+       padding: 0%;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: #FFCE0D;
+    }
+
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid gray;
+        margin: 0;
+
+    }
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+
+    #maps {
+        width: 80vh;
+        height: 55vh;
+        margin: auto;
+    }
+    
+    .footer_menu{
+        padding-top: 0;
+    }
+    .footer_container {
+        text-align: center;   
+     }
+     .footer_menu p {
+        max-width: none;   
+    }
+    .footer_menu ul{
+        list-style-type: none;
+    }
+    .media ul {
+        display: flex; 
+         }
+
+}
+
+@media only screen and (max-width: 490px) {
+
+    #maps {
+        width: 55vh;
+        height: 40vh;
+        margin: auto;
+        padding: 0;
+    }
+
+    .nav {
+        padding-bottom: 20vh;
+    }
+}
